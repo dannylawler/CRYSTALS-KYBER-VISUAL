@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    height: 100vh; 
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Main Container Styling */
+#main-container {
+    width: 80%;
+    height: 80%; 
+    background-color: white;
+    border: 10px solid;
+    border-color: #136adbd8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+/* Main Header Styling */
+#main-header {
+    width: 60%;
+    text-align: center;
+    background-color: #4b0082; 
+    color: white; 
+    padding: 20px 0;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Main Header Text Styling */
+#main-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Draw Alice and Bob Button Styling */
+#next-button {
+    position: absolute; /* Position the button relative to the container */
+    top: 22%; /* Center vertically */
+    left: 83%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the button's size */
+    padding: 10px 20px; /* Add padding for better appearance */
+    font-size: 16px; /* Increase font size */
+    background-color: #4b0082; /* Dark purple background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Start Button Hover Effect */
+#next-button:hover {
+    background-color: #6a0dad; /* Lighter purple on hover */
+    color: #ffe066; /* Optional: change text color on hover */
+}
+
+/* Next Button Disabled Effect */
+#next-button:disabled {
+    background-color: #d1b3ff !important; /* Light purple */
+    color: #fff;
+    cursor: default !important; /* Prevent pointer cursor */
+    opacity: 1; /* Keep button fully visible */
+}
+
+/* Restart Button Styling */
+#restart-button {
+    position: absolute; /* Position the button relative to the container */
+    top: 22%; /* Center vertically */
+    left: 17.5%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the button's size */
+    padding: 10px 20px; /* Add padding for better appearance */
+    font-size: 16px; /* Increase font size */
+    background-color: #4b0082; /* Dark purple background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Restart Button Hover Effect */
+#restart-button:hover {
+    background-color: #6a0dad; /* Lighter purple on hover */
+    color: #ffe066; /* Optional: change text color on hover */
+}   
+
+/* Canvas Styling */
+canvas {
+    border-radius: 10px;
+}
+
+/* Start Message Styling */   
+#start-message {
+    position: absolute; /* Position the message relative to the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the text size */
+    font-size: 42px; /* Increase font size */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center the text */
+}
+
+/* Step Message Styling */
+#step-message {
+    position: absolute; /* Position the message relative to the container */
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the text size */
+    font-size: 24px; /* Increase font size */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center the text */
+    display: none; /* Initially hidden */
+}
+
+#script {
+    position: absolute; /* Position the script text relative to the container */
+    top: 30%; /* Position near the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the text size */
+    font-size: 16px; /* Increase font size */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center the text */
+    display: none;
+}
